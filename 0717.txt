@@ -1,0 +1,40 @@
+Git
+
+분산 버전 관리 시스템 - 변화를 기록하고 추적하는 것
+
+Git의 3요소
+
+Working directory - 실제 작업 중인 파일들이 위치하는 영역
+
+Staging area - Working directory에서 변경된 파일 중, 다음 버전에 포함시킬 파일들을 선택적으로 추가하거나 제외할 수 있는 중간 준비 영역
+
+Repository - 버전 이력과 파일들이 영구적으로 저장되는 영역 모든 버전과 변경 이력이 기록
+
+working directory → staging area = add
+
+Add 후 파일에 설명/메모를 작성함 = commit
+
+staging area → Repository = push
+
+
+git init = 로컬 저장소 설정
+
+**remote repository**
+
+원격 저장소 - 코드와 버전 관리 이력을 온라인 상의 특정 위치에 저장하여 여러 개발자가 협업하고 코드를 공유할 수 있는 저장 공간
+
+git revert & reset
+
+push
+
+commit 이력이 없다면 push가 안됨
+
+관리 할 버전이 없는 상태 - 대기 상태
+
+git ignore에 있는 파일명은 로컬에 존재한다고 추정 예) 보안 파일, 무거운 파일들
+
+한 번 git에 이력이 이는 파일은 나중에 git ignore에 작성해도 적용이 안됨
+
+git rm —cached를 통해 git 캐시를 삭제해야 함
+
+git은 포트폴리오 및 협업에 사용함
