@@ -2,7 +2,7 @@ import requests
 from pprint import pformat
 
 def get_weather():
-    API_key = 'f7f73a807ab59c4f25be9ee95fbba6c5'
+    API_key = ''
     url_kr = f'https://api.openweathermap.org/data/2.5/weather?id=524901&lang=kr&appid={API_key}'
     response = requests.get(url_kr).json()
     return response
